@@ -1,0 +1,162 @@
+/* 𝗟𝗘 𝗕𝗔𝗦𝗜 */
+:root{
+    --main: rgb(30, 30, 30);
+    --sec: rgb(238, 238, 238);
+    --text:white;
+    --attach:#ff740b;
+}
+*{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--main);
+}
+h1{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+}
+h2, h3, h4{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.bgBlackCus{
+    background-color: var(--main);
+}
+.bgGreyCus{
+    background-color: var(--sec);
+}
+.bgWhiteCus{
+    background-color: var(--text);
+}
+.bgOrange{
+    background-color: var(--attach);
+}
+.textBlackCus{
+    color: var(--main);
+}
+.textWhiteCus{
+    color: var(--text);
+}
+.textOrange{
+    color: var(--attach);
+}
+.textGreyCus{
+    color: var(--sec);
+}
+
+/* 𝗡𝗔𝗩𝗕𝗔𝗥 */
+.message-alert{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.navbar{
+    z-index: 1;
+}
+.searchform{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.inputsearch{
+    position: relative;
+    border: 2px solid rgb(33, 33, 33);
+    border-radius: 30px;
+    padding: 10px;
+    width: 140px;
+    height: 47px;
+    background-color: var(--text);
+    outline: none !important;
+    transition: 0.6s linear;
+}
+.btnsearch{
+    position: absolute;
+    border: 0px solid rgb(23, 23, 23);
+    border-radius: 60px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--main);
+    margin-right: 10px;
+}
+.searchform:hover > .inputsearch{
+    width: 200px;
+    height: 47px;
+    transition: width 0.6s linear;
+}
+.nav-item{
+    border: 2px solid transparent;
+    min-width:90px;
+}
+.nav-item:hover{
+    border: 2px solid var(--main);
+    transition: 0.6s linear;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.navbarCus{
+    background-color: #c4c4c476;
+    backdrop-filter: blur(25px);
+}
+.logotipo{
+align-items: center;
+}
+.pittogramma{
+    align-items: center;
+}
+.navscale{
+    transform: scale(95%);
+    transition: 1s;
+}
+
+
+/* linear-gradient(to bottom, rgba(255, 255, 255, 0.764), rgba(255, 255, 255, 0.108)), */
+.headerCus{
+    background-image:  url("./media/cassetta.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: end;
+}
+.vertical-text{
+    transform: rotate(-90deg);
+    border-bottom: 1px solid var(--main);
+    width: 100;
+    bottom: 30%;
+    right: -10%;
+    position: absolute;
+}
+.inputCus{
+    outline: none;
+    background-color: transparent;
+    border-radius: 0;
+    border: none; 
+    border-bottom: 2px rgb(32, 32, 32) solid;
+    box-shadow: none;
+}
+.inputCus:focus{
+    background-color: transparent;
+    outline: none;
+    border-bottom: 4px rgb(32, 32, 32) solid;
+    box-shadow: none;
+}
+.descriptionCus:focus {
+    outline: none;
+    border: 3px rgb(32, 32, 32) solid;
+    box-shadow: none;
+}
+input[type=file]::file-selector-button{
+    background-color:var(--main);
+    color: white;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+.swiper-button-next{
+    color: #101010;
+  
+    
+    }
